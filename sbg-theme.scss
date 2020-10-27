@@ -1,0 +1,110 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$sbg-primary-palette: (
+    50 : #e0e7f5,
+    100 : #b3c2e6,
+    200 : #8099d5,
+    300 : #4d70c4,
+    400 : #2652b7,
+    500 : #0033aa,
+    600 : #002ea3,
+    700 : #002799,
+    800 : #002090,
+    900 : #00147f,
+    A100 : #adb4ff,
+    A200 : #7a85ff,
+    A400 : #4757ff,
+    A700 : #2d40ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$sbg-accent-palette: (
+    50 : #fdfdfd,
+    100 : #fafafa,
+    200 : #f6f6f6,
+    300 : #f2f2f2,
+    400 : #f0f0f0,
+    500 : #ededed,
+    600 : #ebebeb,
+    700 : #e8e8e8,
+    800 : #e5e5e5,
+    900 : #e0e0e0,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$sbg-warn-palette: (
+    50 : #fce0e2,
+    100 : #f8b3b8,
+    200 : #f38088,
+    300 : #ee4d58,
+    400 : #eb2635,
+    500 : #e70011,
+    600 : #e4000f,
+    700 : #e0000c,
+    800 : #dd000a,
+    900 : #d70005,
+    A100 : #fffefe,
+    A200 : #ffcbcb,
+    A400 : #ff9899,
+    A700 : #ff7f7f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$sbg-primary: mat-palette($sbg-primary-palette);
+$sbg-accent: mat-palette($sbg-accent-palette);
+$sbg-warn: mat-palette($sbg-warn-palette);
+
+$sbg-theme: mat-light-theme($sbg-primary, $sbg-accent, $sbg-warn);
+
+@include angular-material-theme($sbg-theme);
